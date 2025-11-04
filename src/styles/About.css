@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.about-section {
+  background-color: #08080f;
+  padding-bottom: 9rem;
+}
+
+.about-wrapper {
+    height: 110rem;
+    width: 100%;
+    background: url(../assets/Path.svg) no-repeat bottom;
+    background-size: cover;
+}
+
+.about-heading{
+    display: flex;
+    padding: 16rem 9rem 2rem 4rem;
+    margin: 0rem 9rem 1rem 1rem;
+    font-size: 5.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 35rem;
+    padding: 4rem 2rem 4rem 35rem;
+    margin: 3rem 1rem 1rem 7rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-me-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 3rem 0rem 0rem;
+    font-size: 2rem;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 65rem;
+    padding: 6rem 4rem 0rem 14rem;
+    font-size: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

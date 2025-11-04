@@ -1,0 +1,18 @@
+---
+import Hero from '../sections/Hero';
+import About from "../components/About";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio - Saad Akhtar</title>
+  </head>
+  <body>
+    <Hero client:only="react" />
+    <About client:only="react" />
+  </body>
+</html>
