@@ -21,9 +21,9 @@ body {
 
 /* Central alignment container */
 .about-content {
-  width: 100%;
+  width: 80%;
   max-width: 1400px;
-  padding: 0 4rem;
+  padding: 0 0 0 2rem;
   z-index: 111;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
 
   padding-top: 16rem;
   padding-bottom: 2rem;
-
+  
   font-size: 5.5rem;
   background: none;
 }
@@ -47,7 +47,7 @@ body {
 .about-text {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  align-self: center;
 
   max-width: 35rem;
   margin-top: 3rem;
@@ -58,7 +58,7 @@ body {
 
 /* ABOUT ME */
 .about-me-title {
-  margin-top: 6rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,12 +69,11 @@ body {
   margin: 0 auto;
   max-width: 55rem;
   padding-top: 3rem;
-
+  padding-bottom: 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   font-size: 2rem;
 }
 
@@ -143,13 +142,13 @@ body {
 
   .about-text {
     align-self: flex-start;
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .about-me {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
 
@@ -157,24 +156,33 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   .about-heading {
     font-size: 3.8rem;
-    padding-top: 10rem;
+    padding-top: 2rem;
   }
 
   .about-text {
-    max-width: 100%;
+    max-width: 80%;
     align-self: flex-start;
-    font-size: 1.35rem;
+    font-size: 1rem;
   }
 
   .about-me {
-    font-size: 1.8rem;
+    max-width: 80%;
+    font-size: 1.4rem;
   }
 }
 
 /* 481px – 767px */
 @media (min-width: 481px) and (max-width: 767px) {
+  .about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
   .about-content {
-    padding: 0 2rem;
+    padding: 0 0rem;
   }
 
   .about-heading {
@@ -183,7 +191,8 @@ body {
   }
 
   .about-text {
-    font-size: 1.2rem;
+    margin: 0 1rem;
+    font-size: 0.9rem;
   }
 
   .about-me-title {
@@ -191,12 +200,20 @@ body {
   }
 
   .about-me {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
 /* <= 480px */
 @media (max-width: 480px) {
+  .about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
   .about-wrapper {
     background-position: center bottom;
   }
@@ -211,7 +228,7 @@ body {
   }
 
   .about-text {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .about-me-title {
@@ -219,6 +236,6 @@ body {
   }
 
   .about-me {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
