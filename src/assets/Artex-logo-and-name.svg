@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 411.93">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: FranklinGothic-Heavy, 'Franklin Gothic Heavy';
+        font-size: 109.64px;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 99.44px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <g>
+        <line class="cls-5" x1="181.31" y1="136.61" x2="232.67" y2="252.18"/>
+        <polyline class="cls-5" points="101.77 212 101.93 161.85 305.77 73.83 305.77 129.56 101.77 219.47 102.23 252.5 58.22 252.5 178.79 2.5 122.15 2.5 178.55 127.7"/>
+        <line class="cls-5" x1="156.24" y1="35.72" x2="141.56" y2="2.24"/>
+        <line class="cls-5" x1="158.68" y1="43.42" x2="212.49" y2="162.9"/>
+        <line class="cls-5" x1="215.95" y1="168.76" x2="248.57" y2="244.53"/>
+        <polyline class="cls-5" points="218.27 252.5 288.31 252.5 317.27 252.5"/>
+        <line class="cls-5" x1="226.34" y1="108" x2="288.31" y2="252.18"/>
+        <line class="cls-5" x1="265.38" y1="154.34" x2="305.59" y2="244.53"/>
+        <polyline class="cls-5" points="262.9 148.44 210.66 31.5 191.7 31.5 164.27 31.5"/>
+        <line class="cls-5" x1="223.5" y1="103.16" x2="191.7" y2="31.13"/>
+      </g>
+      <text transform="translate(0 378.31) scale(1.09 1)"><tspan><tspan class="cls-2" x="0" y="0">A</tspan><tspan class="cls-3" x="69.91" y="0">R</tspan><tspan class="cls-1" x="146.2" y="0">TEX</tspan><tspan class="cls-4" x="332.39" y="0"> </tspan></tspan></text>
+    </g>
+  </g>
+</svg>

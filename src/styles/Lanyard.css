@@ -1,0 +1,32 @@
+.lanyard-wrapper {
+  position: relative;
+  z-index: 9;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.4);
+  transform-origin: center;
+}
+
+/* Tablets & below */
+
+@media (max-width: 991px) {
+  .lanyard-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    transform: scale(1);
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .lanyard-wrapper {
+    min-height: 45vh;
+    margin-top: 3rem;
+  }
+}

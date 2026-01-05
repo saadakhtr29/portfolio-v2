@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, memo } from "react";
+import Lanyard from "./Lanyard";
 import "../styles/About.css";
 
 const About: React.FC = () => {
@@ -25,6 +26,7 @@ const About: React.FC = () => {
     <section ref={sectionRef} className="about-section fade-in">
       <section className="about-section">
         <div className="about-wrapper">
+            <Lanyard />
           <div className="about-content">
             <h1 className="about-heading">
               DEVELOPER,

@@ -2,60 +2,83 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+/* SECTION & WRAPPER */
+
 .about-section {
   background-color: #08080f;
   padding-bottom: 9rem;
 }
 
 .about-wrapper {
-    height: 110rem;
-    width: 100%;
-    background: url(../assets/Path.svg) no-repeat bottom;
-    background-size: cover;
+  min-height: 110rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: url(../assets/Path.svg) no-repeat bottom;
+  background-size: cover;
 }
 
-.about-heading{
-    display: flex;
-    padding: 16rem 9rem 2rem 4rem;
-    margin: 0rem 9rem 1rem 1rem;
-    font-size: 5.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+/* Central alignment container */
+.about-content {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 4rem;
+  z-index: 111;
+  display: flex;
+  flex-direction: column;
 }
 
-.about-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 35rem;
-    padding: 4rem 2rem 4rem 35rem;
-    margin: 3rem 1rem 1rem 7rem;
-    font-size: 1.5rem;
-    font-weight: 400;
+/* HEADING */
+.about-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 16rem;
+  padding-bottom: 2rem;
+
+  font-size: 5.5rem;
+  background: none;
 }
 
-.about-me-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem 3rem 0rem 0rem;
-    font-size: 2rem;
+/* TEXT BLOCK */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+
+  max-width: 35rem;
+  margin-top: 3rem;
+
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-.about-me{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    width: 65rem;
-    padding: 6rem 4rem 0rem 14rem;
-    font-size: 2rem;
+/* ABOUT ME */
+.about-me-title {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
+.about-me {
+  margin: 0 auto;
+  max-width: 55rem;
+  padding-top: 3rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+}
+
+/* ANIMATIONS */
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
@@ -65,4 +88,137 @@ body {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* >= 1920px */
+@media (min-width: 1920px) {
+  .about-wrapper {
+    min-height: 120rem;
+  }
+
+  .about-content {
+    max-width: 1600px;
+    padding: 0 6rem;
+  }
+
+  .about-heading {
+    font-size: 6.5rem;
+  }
+
+  .about-text {
+    max-width: 42rem;
+    font-size: 1.7rem;
+  }
+
+  .about-me {
+    max-width: 65rem;
+  }
+}
+
+/* 1200px – 1919px */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .about-heading {
+    font-size: 5.2rem;
+  }
+
+  .about-text {
+    max-width: 34rem;
+  }
+
+  .about-me {
+    max-width: 52rem;
+  }
+}
+
+/* 992px – 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-wrapper {
+    min-height: auto;
+  }
+
+  .about-heading {
+    font-size: 4.5rem;
+    padding-top: 12rem;
+  }
+
+  .about-text {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .about-me {
+    max-width: 100%;
+  }
+}
+
+/* 768px – 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-heading {
+    font-size: 3.8rem;
+    padding-top: 10rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+    align-self: flex-start;
+    font-size: 1.35rem;
+  }
+
+  .about-me {
+    font-size: 1.8rem;
+  }
+}
+
+/* 481px – 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-content {
+    padding: 0 2rem;
+  }
+
+  .about-heading {
+    font-size: 3.2rem;
+    padding-top: 8rem;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .about-me-title {
+    font-size: 1.6rem;
+  }
+
+  .about-me {
+    font-size: 1.6rem;
+  }
+}
+
+/* <= 480px */
+@media (max-width: 480px) {
+  .about-wrapper {
+    background-position: center bottom;
+  }
+
+  .about-content {
+    padding: 0 1.5rem;
+  }
+
+  .about-heading {
+    font-size: 2.6rem;
+    padding-top: 6rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+
+  .about-me-title {
+    font-size: 1.4rem;
+  }
+
+  .about-me {
+    font-size: 1.4rem;
+  }
 }
