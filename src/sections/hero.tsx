@@ -1,6 +1,5 @@
 "use client";
-import React, { useRef, forwardRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import BubbleMenu from "../components/BubbleMenu";
 import DotGrid from "../components/DotGrid";
@@ -136,7 +135,7 @@ const HeroSection: React.FC<SectionProps> = ({ scrollYProgress }) => {
   );
 };
 
-// === SECTION 2 ===
+
 const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
@@ -163,11 +162,11 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
   );
 };
 
-// === MAIN WRAPPER COMPONENT ===
+
 const Hero: React.FC = () => {
   const container = useRef<HTMLDivElement>(null);
 
-  // Attach scroll progress to the container
+  
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start start", "end end"],

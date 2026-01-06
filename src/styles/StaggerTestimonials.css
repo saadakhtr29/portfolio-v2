@@ -4,7 +4,6 @@
   height: 470px;
   overflow: hidden;
 }
-
 .testimonial-card {
   position: absolute;
   left: 50%;
@@ -17,22 +16,28 @@
   padding: 2rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  clip-path: polygon(50px 0%, calc(100% - 50px) 0%, 100% 50px, 100% 100%, calc(100% - 50px) 100%, 50px 100%, 0 100%, 0 0);
+  clip-path: polygon(
+    50px 0%,
+    calc(100% - 50px) 0%,
+    100% 50px,
+    100% 100%,
+    calc(100% - 50px) 100%,
+    50px 100%,
+    0 100%,
+    0 0
+  );
 }
-
 .testimonial-card.center {
   border-color: #575757;
   background: linear-gradient(to top, #e4e4e4, #ffffff);
   color: #000000;
   z-index: 10;
 }
-
 .testimonial-card h3 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
-
 .testimonial-card p {
   position: absolute;
   bottom: 1.5rem;
@@ -42,7 +47,6 @@
   font-style: italic;
   opacity: 0.8;
 }
-
 .testimonial-img {
   width: 0.5rem;
   height: 0.5rem;
@@ -50,7 +54,6 @@
   margin-bottom: 1rem;
   box-shadow: 3px 3px 0px #f5f5f5;
 }
-
 .decor-line {
   position: absolute;
   background-color: #ccc;
@@ -58,7 +61,6 @@
   transform: rotate(45deg);
   display: block;
 }
-
 .controls {
   position: absolute;
   bottom: -3rem;
@@ -67,7 +69,6 @@
   display: flex;
   gap: 0.5rem;
 }
-
 .controls button {
   width: 3.5rem;
   height: 3.5rem;
@@ -77,9 +78,262 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .controls button:hover {
   background-color: #f0f0f0;
   color: #000000;
   border-color: #6e6e6e;
+}
+
+/* Responsive Breakpoints */
+
+/* Small phones: 360px - 480px */
+@media (min-width: 360px) and (max-width: 480px) {
+  .stagger-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .testimonial-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 220px !important;
+    height: 220px !important;
+    padding: 1.5rem;
+    background: linear-gradient(to top, #06060e, #1a1919);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .testimonial-card.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 220px !important;
+    height: 250px !important;
+    padding: 1.5rem;
+    border-color: #575757;
+    background: linear-gradient(to top, #e4e4e4, #ffffff);
+    color: #000000;
+    z-index: 10;
+  }
+
+  .testimonial-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.8rem;
+    bottom: 1.25rem;
+  }
+
+  .controls {
+    bottom: -2.5rem;
+  }
+
+  .controls button {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
+  }
+
+  controls button:hover {
+    background-color: #f0f0f0;
+    color: #000000;
+    border-color: #6e6e6e;
+  }
+}
+
+/* Phones: 481px - 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .stagger-wrapper {
+    max-width: 420px;
+    height: 420px;
+  }
+
+  .testimonial-card {
+    width: 240px !important;
+    height: 240px !important;
+    padding: 1.75rem;
+  }
+
+  .testimonial-card.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 240px !important;
+    height: 270px !important;
+    padding: 1.5rem;
+    border-color: #575757;
+    background: linear-gradient(to top, #e4e4e4, #ffffff);
+    color: #000000;
+    z-index: 10;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .stagger-wrapper {
+    max-width: 720px;
+    height: 440px;
+  }
+
+  .testimonial-card {
+    width: 260px !important;
+    height: 260px !important;
+    padding: 1.85rem;
+  }
+
+  .testimonial-card.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 260px !important;
+    height: 290px !important;
+    padding: 1.5rem;
+    border-color: #575757;
+    background: linear-gradient(to top, #e4e4e4, #ffffff);
+    color: #000000;
+    z-index: 10;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.88rem;
+  }
+
+  .controls {
+    bottom: -3rem;
+  }
+}
+
+/* Small desktops: 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .stagger-wrapper {
+    max-width: 900px;
+    height: 460px;
+  }
+
+  .testimonial-card {
+    width: 270px !important;
+    height: 270px !important;
+  }
+
+  .testimonial-card.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 270px !important;
+    height: 300px !important;
+    padding: 1.5rem;
+    border-color: #575757;
+    background: linear-gradient(to top, #e4e4e4, #ffffff);
+    color: #000000;
+    z-index: 10;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium desktops: 1200px - 1919px */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .stagger-wrapper {
+    max-width: 1100px;
+    height: 570px;
+  }
+
+  .testimonial-card {
+    width: 280px !important;
+    height: 290px !important;
+    padding: 2rem;
+  }
+
+  .testimonial-card.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 280px !important;
+    height: 320px !important;
+    padding: 1.5rem;
+    border-color: #575757;
+    background: linear-gradient(to top, #e4e4e4, #ffffff);
+    color: #000000;
+    z-index: 10;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large desktops: 1920px and up */
+@media (min-width: 1920px) {
+  .stagger-wrapper {
+    max-width: 1580px;
+    height: 670px;
+  }
+
+  .testimonial-card {
+    width: 370px !important;
+    height: 390px !important;
+    padding: 2.25rem;
+  }
+
+  .testimonial-card.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 370px !important;
+    height: 420px !important;
+    padding: 1.5rem;
+    border-color: #575757;
+    background: linear-gradient(to top, #e4e4e4, #ffffff);
+    color: #000000;
+    z-index: 10;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.95rem;
+  }
+
+  .controls {
+    bottom: -3.5rem;
+  }
+
+  .controls button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
 }

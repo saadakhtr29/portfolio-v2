@@ -10,7 +10,7 @@ body {
 }
 
 .about-wrapper {
-  min-height: 110rem;
+  min-height: 80rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -36,9 +36,9 @@ body {
   justify-content: center;
   align-items: flex-start;
 
-  padding-top: 16rem;
+  padding-top: 15rem;
   padding-bottom: 2rem;
-  
+
   font-size: 5.5rem;
   background: none;
 }
@@ -125,7 +125,9 @@ body {
   }
 
   .about-me {
-    max-width: 52rem;
+    font-size: 2rem;
+    max-width: 40rem;
+    padding-bottom: 11rem;
   }
 }
 
@@ -141,28 +143,31 @@ body {
   }
 
   .about-text {
-    align-self: flex-start;
+    align-self: center;
+    width: 60%;
     max-width: 80%;
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .about-me {
+    padding-bottom: 10rem;
     max-width: 70%;
+    font-size: 2rem;
   }
 }
 
 /* 768px – 991px */
 @media (min-width: 768px) and (max-width: 991px) {
   .about-heading {
-    font-size: 3.8rem;
-    padding-top: 2rem;
+    font-size: 3rem;
+    padding-top: 9rem;
   }
 
   .about-text {
-    max-width: 80%;
+    max-width: 100%;
     align-self: flex-start;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .about-me {
@@ -173,7 +178,7 @@ body {
 
 /* 481px – 767px */
 @media (min-width: 481px) and (max-width: 767px) {
-  .about-wrapper{
+  .about-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +192,7 @@ body {
 
   .about-heading {
     font-size: 3.2rem;
-    padding-top: 8rem;
+    padding-top: 0rem;
   }
 
   .about-text {
@@ -206,7 +211,7 @@ body {
 
 /* <= 480px */
 @media (max-width: 480px) {
-  .about-wrapper{
+  .about-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,11 +229,13 @@ body {
 
   .about-heading {
     font-size: 2.6rem;
-    padding-top: 6rem;
+    padding-top: 0rem;
   }
 
   .about-text {
-    font-size: 0.9rem;
+    min-width: 15rem;
+    margin-top: 1rem;
+    font-size: 0.75rem;
   }
 
   .about-me-title {
@@ -236,6 +243,7 @@ body {
   }
 
   .about-me {
+    margin-bottom: 3rem;
     font-size: 1.2rem;
   }
 }
